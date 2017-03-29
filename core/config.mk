@@ -633,10 +633,9 @@ endif
 
 ifneq ($(COMMON_GLOBAL_CFLAGS)$(COMMON_GLOBAL_CPPFLAGS),)
 $(warning COMMON_GLOBAL_C(PP)FLAGS changed)
-$(info *** Device configurations are no longer allowed to change the global flags.)
+$(info *** Device configurations are deprecated)
 $(info *** COMMON_GLOBAL_CFLAGS: $(COMMON_GLOBAL_CFLAGS))
 $(info *** COMMON_GLOBAL_CPPFLAGS: $(COMMON_GLOBAL_CPPFLAGS))
-$(error bailing...)
 endif
 
 # These can be changed to modify both host and device modules.
